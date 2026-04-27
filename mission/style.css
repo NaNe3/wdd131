@@ -41,3 +41,26 @@ img {
     margin: 40px auto;
 
 }
+
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode div {
+    border-color: #444;
+}
+
+.dark-mode header {
+    border-bottom-color: #555;
+}
+
+.dark-mode #byui {
+    color: #4da6ff;
+}
+
+.dark-mode select {
+    background-color: #2d2d2d;
+    color: #f0f0f0;
+    border: 1px solid #444;
+}
