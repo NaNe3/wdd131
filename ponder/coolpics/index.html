@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="index.css">
+
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -15,13 +17,13 @@
   <header>
     <h1>Cool Pics! 📷</h1>
     <div class="nav-container">
-      <nav>
+      <p class="menu-btn">Menu</p>
+      <nav class="hide">
         <a href="#">Home</a>
         <a href="#">Scriptures</a>
         <a href="#">Favorites</a>
         <a href="#">About</a>
       </nav>
-      <p>Menu</p>
     </div>
   </header>
   <main>
@@ -57,6 +59,12 @@
     </div>
   </main>
   <footer>Eli Summers</footer>
+  <dialog>
+    <div class="modal-content">
+      <img src="norris-sm.jpg" alt="this is a pretty neat mountian" class="modal-pic">
+      <button class="close-viewer">X</button>
+    </div>
+  </dialog>
 </body>
 
 </html>

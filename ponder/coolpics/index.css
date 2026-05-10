@@ -43,16 +43,27 @@ h1 {
 nav a {
   padding: 20px;
   color: white;
-  display: none;
+  display: block;
+
+  text-align: center;
 }
 
 nav a:hover {
   text-decoration: none;
-  color: #616061;
+  opacity: 0.75;
+}
+
+.menu-btn {
+  display: block;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .nav-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -60,6 +71,10 @@ nav a:hover {
 .nav-container p {
   text-align: center;
   display: block;
+}
+
+.hide {
+  display: none;
 }
 
 section {
@@ -72,16 +87,43 @@ section {
 section img {
   width: 280px;
   height: 280px;
+  object-fit: cover;
   background-color: white;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
-  object-fit: cover;
+  cursor: pointer;
 }
 
 footer {
   text-align: center;
 }
+
+/* MODAL STYLING */
+dialog img {
+  width: 90%;
+  display: block;
+  margin: 20vh auto;
+}
+
+dialog {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .75);
+
+  overflow: hidden;
+}
+
+.close-viewer {
+  position: absolute;
+  top: 10vh;
+  right: 2vh;
+  padding: 3px 6px;
+  font-size: 1.5em;
+
+  cursor: pointer;
+}
+
 
 
 @media screen and (min-width: 700px) {
@@ -103,7 +145,27 @@ footer {
     grid-template-columns: 320px 320px 320px;
   }
 
-  .nav-container p { display: none; }
-  nav a { display: inline-block; }
-  nav { text-align: center; }
+  dialog img {
+    width: 50%;
+    margin: 15vh auto;
+  }
+
+  .close-viewer {
+    position: absolute;
+    right: 15vh;
+  }
+
+  .nav-container p {
+    display: none;
+  }
+
+  .hide { display: block; }
+
+  nav a {
+    display: inline-block;
+  }
+
+  nav {
+    text-align: center;
+  }
 }
