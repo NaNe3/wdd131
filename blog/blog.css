@@ -65,6 +65,19 @@ body {
 	letter-spacing: 0.08rem;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: min(100%, 1100px);
+	margin: 0 auto;
+}
+
+.review-content {
+	width: 100%;
+	max-width: 900px;
+}
+
 .review-content h2 {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -87,6 +100,7 @@ body {
 }
 
 .site-footer {
+	width: 100%;
 	border-top: 2px solid #d9c9b3;
 	text-align: center;
 	padding: 0.75rem;
@@ -107,7 +121,7 @@ body {
 		gap: 1.35rem;
 		align-items: start;
 		padding: 2rem 1.8rem;
-		border-bottom: 2px solid #d9c9b3;
+		/* border-bottom: 2px solid #d9c9b3; */
 	}
 
 	.review-meta {
@@ -124,9 +138,5 @@ body {
 
 	.review-content img {
 		margin-left: 0;
-	}
-
-	.site-footer {
-		border-top: 0;
 	}
 }
