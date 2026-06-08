@@ -9,8 +9,8 @@ const levelUpBtn = document.querySelector("#levelup-btn");
 
 const character = {
 	name: "Snortleblat",
-	class: "Swamp Sorcerer",
-	level: 1,
+	class: "Swamp Diplomat Person Sorcerer Thing",
+	level: 100000000,
 	health: 100,
 	image: "./snortleblat.webp",
 
