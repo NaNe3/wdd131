@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Card</title>
+
+  <meta name="description" content="Interactive character card showing name, class, level, and health with attack and level-up actions.">
+
+  <meta property="og:title" content="Character Card">
+  <meta property="og:description" content="Watch the character take damage and level up in this interactive card demo! Wooooooo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nane3.github.io/wdd131/charactercard/">
+  <meta property="og:image" content="./snortleblat.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Character Card">
+  <meta name="twitter:description" content="Snortleblat is going to WIIIIIIIIN">
+  <meta name="twitter:image" content="./snortleblat.webp">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./snortleblat.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="./snortleblat.webp">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-live="polite">
+      <img id="character-image" alt="Character portrait">
+      <div class="info-section">
+        <h1 id="character-name"></h1>
+        <p><strong>Class:</strong> <span id="character-class"></span></p>
+        <p><strong>Level:</strong> <span id="character-level"></span></p>
+        <p><strong>Health:</strong> <span id="character-health"></span></p>
+        <p id="status-message" class="status"></p>
+
+        <div class="actions">
+          <button id="attack-btn" type="button">Attacked</button>
+          <button id="levelup-btn" type="button">Level Up</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
