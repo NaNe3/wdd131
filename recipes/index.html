@@ -23,7 +23,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="index.css">
+	<script src="recipes.js" defer></script>
 </head>
 <body>
 	<div class="page-shell">
@@ -35,7 +37,8 @@
 
 			<form class="search" role="search" aria-label="Search recipes">
 				<label for="recipe-search" class="sr-only">Search recipes</label>
-				<input id="recipe-search" type="search" name="q" placeholder="Find a recipe" autocomplete="off">
+				<input id="recipe-search" type="search" name="q" placeholder="Find a recipe" autocomplete="off" list="recipe-search-options">
+				<datalist id="recipe-search-options"></datalist>
 				<button type="submit" aria-label="Search">
 					<img src="images/search.svg" alt="" width="20" height="20">
 				</button>

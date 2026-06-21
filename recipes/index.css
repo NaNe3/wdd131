@@ -7,6 +7,12 @@ body {
 	font-family: "Source Sans 3", "Trebuchet MS", sans-serif;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
 .page-shell {
 	max-width: 920px;
 	margin: 0 auto;
