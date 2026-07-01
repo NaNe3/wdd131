@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Home Wireframe</title>
+  <desc id="desc">Wireframe layout showing home page sections.</desc>
+  <rect width="900" height="600" fill="#ffffff" stroke="#222"/>
+  <rect x="20" y="20" width="860" height="60" fill="#eaeaea" stroke="#444"/>
+  <text x="40" y="56" font-family="Arial, sans-serif" font-size="20">Header + Navigation</text>
+  <rect x="20" y="100" width="860" height="120" fill="#f3f3f3" stroke="#444"/>
+  <text x="40" y="165" font-family="Arial, sans-serif" font-size="20">Hero: Site intro + CTA</text>
+  <rect x="20" y="240" width="270" height="150" fill="#fafafa" stroke="#444"/>
+  <rect x="315" y="240" width="270" height="150" fill="#fafafa" stroke="#444"/>
+  <rect x="610" y="240" width="270" height="150" fill="#fafafa" stroke="#444"/>
+  <text x="55" y="320" font-family="Arial, sans-serif" font-size="18">Quick Link Card</text>
+  <text x="350" y="320" font-family="Arial, sans-serif" font-size="18">Quick Link Card</text>
+  <text x="645" y="320" font-family="Arial, sans-serif" font-size="18">Quick Link Card</text>
+  <rect x="20" y="410" width="860" height="110" fill="#f3f3f3" stroke="#444"/>
+  <text x="40" y="470" font-family="Arial, sans-serif" font-size="20">Daily Practice Widget</text>
+  <rect x="20" y="540" width="860" height="40" fill="#eaeaea" stroke="#444"/>
+  <text x="40" y="566" font-family="Arial, sans-serif" font-size="16">Footer</text>
+</svg>

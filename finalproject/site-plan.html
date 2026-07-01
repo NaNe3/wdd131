@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Oppidum Meum</title>
+  <link type="text/css" rel="stylesheet" href="styles/site-plan.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Oppidum Meum Site Plan</h1>
+    <h2>Eli Summers</h2>
+    <h2>WDD 131-A4</h2>
+    <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+  </header>
+  <main>
+    <!-- ------------------------Steps 2-3------------------------------ -->
+    <hr />
+    <h2>Overview</h2>
+    <h3>Purpose</h3>
+    <p>
+      Oppidum Meum is a study website for beginning and intermediate Latin
+      learners. The purpose is to collect verb conjugations and noun/adjective
+      declensions in one place with clear charts, examples, and memory aids so
+      students can review faster and feel more confident during homework,
+      reading, and quizzes.
+    </p>
+    <!-- change this -->
+
+    <h3>Audience</h3>
+    <p>
+      The primary audience is high school and college students taking Latin,
+      plus independent learners who want a quick grammar reference. A secondary
+      audience is tutors and teachers who want a simple visual resource for
+      review activities.
+    </p>
+    <!-- change this -->
+
+    <h3>Dynamic elements</h3>
+    <p>
+      JavaScript will power interactive grammar tools: a filterable table for
+      conjugations/declensions by tense, mood, person, case, and declension;
+      expandable chart rows for examples; a random practice generator that shows
+      a form and asks for parsing; and a score tracker using localStorage so
+      users can monitor progress between sessions.
+    </p>
+    <!-- change this -->
+
+    <hr />
+    <h2>Branding</h2>
+    <h3>Website Logo</h3>
+    <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+    <img src="images/oppidum-meum-logo.svg" alt="Oppidum Meum logo" />
+    <hr />
+    <h2>Style Guide</h2>
+
+    <!-- ------------------------Steps 4-8------------------------------ -->
+
+    <h3>Color Palette</h3>
+    <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+    <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+    Palette URL:
+    <a href="https://coolors.co/8c1c13-f2d9a0-f6c6a8-ead7c8"
+      target="_blank">https://coolors.co/8c1c13-f2d9a0-f6c6a8-ead7c8</a>
+
+    <table class="colors">
+      <tbody>
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent 1</th>
+          <th>Accent 2</th>
+        </tr>
+        <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+        <tr>
+          <td class="primary">#8C1C13</td>
+          <td class="secondary">#F2D9A0</td>
+          <td class="accent1">#F6C6A8</td>
+          <td class="accent2">#EAD7C8</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ------------------------Step 9------------------------------ -->
+
+    <h3>Typography</h3>
+    <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+    <h4>
+      Heading Font: Cinzel (serif display)
+      <!-- change this -->
+    </h4>
+    <h4>
+      Paragraph Font: Source Sans 3 (sans-serif)
+      <!-- change this -->
+    </h4>
+    <h3>Normal paragraph example</h3>
+    <p>
+      Latin can feel overwhelming when every chapter introduces new endings.
+      This site keeps grammar organized by pattern so learners can quickly find
+      the forms they need and compare similar structures side by side.
+    </p>
+    <h3>Colored paragraph example</h3>
+    <p class="colored">
+      Example: puellae can mean "of the girl" (genitive singular), "to/for the
+      girl" (dative singular), or "girls" (nominative plural). The charts and
+      parsing practice help students identify meaning from context.
+    </p>
+
+    <!-- ------------------------Step 10------------------------------ -->
+
+    <h3>Navigation</h3>
+    <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Conjugations</a>
+      <a href="#">Declensions</a>
+    </nav>
+    <hr />
+
+    <h2>Content</h2>
+    <h3>Home page</h3>
+    <p>
+      Home will introduce the purpose of the site, include quick links to all
+      conjugation and declension charts, and feature a short "How to Use This
+      Site" section. It will include a featured study tip, a "form of the day"
+      widget, and links to practice activities.
+    </p>
+    <h3>Conjugations page</h3>
+    <p>
+      This page will organize verb forms by conjugation (1st-4th and irregular)
+      and by tense/mood/voice. Users can filter tables and expand examples for
+      common verbs such as amo, moneo, duco, audio, and sum. A practice section
+      will generate random forms for parsing.
+    </p>
+    <h3>Declensions page</h3>
+    <p>
+      This page will organize noun and adjective endings by declension and case.
+      It will include singular/plural charts, gender notes, and examples for
+      first through fifth declensions plus common irregular forms. Users can
+      toggle endings-only mode or full examples mode.
+    </p>
+
+    <h2>Pseudo Code</h2>
+    <p>
+      CHECK THE COMMENTS OF THIS PAGE'S SOURCE CODE FOR PSUEDO CODE.
+      THIS IS HOW I USED TO DO PSUEDOCODE AT MY INTERNSHIP.
+      <!--
+        ALGORITHM GenerateDeclensionForms
+        INPUT:
+          dictionaryEntry            // example: "puella, puellae, f."
+          declensionNumber           // 1, 2, 3, 4, or 5
+          gender                     // m, f, n
+          optionalIrregularData      // for exceptions
+
+        OUTPUT:
+          formsByCaseAndNumber       // nested structure with singular/plural forms
+
+        BEGIN
+          // 1) Parse and normalize input
+          lemmaData <- ParseDictionaryEntry(dictionaryEntry)
+          nominative <- lemmaData.nominative
+          genitive <- lemmaData.genitive
+
+          // 2) Find stem
+          stem <- ExtractStemFromGenitive(genitive, declensionNumber)
+
+          // 3) Load endings table for selected declension/gender
+          endings <- GetDeclensionEndings(declensionNumber, gender)
+
+          // 4) Build empty result structure
+          formsByCaseAndNumber <- CreateEmptyCaseNumberTable()
+          // Cases: Nominative, Genitive, Dative, Accusative, Ablative, Vocative
+          // Numbers: Singular, Plural
+
+          // 5) Fill forms
+          FOR each number IN [Singular, Plural]
+            FOR each grammaticalCase IN [Nom, Gen, Dat, Acc, Abl, Voc]
+              ending <- endings[number][grammaticalCase]
+
+              IF grammaticalCase = Nom AND number = Singular THEN
+                // nominative singular is often stored as lemma
+                form <- nominative
+              ELSE
+                form <- stem + ending
+              ENDIF
+
+              formsByCaseAndNumber[number][grammaticalCase] <- form
+            ENDFOR
+          ENDFOR
+
+          // 6) Apply irregular overrides if provided
+          IF optionalIrregularData exists THEN
+            formsByCaseAndNumber <- ApplyOverrides(formsByCaseAndNumber, optionalIrregularData)
+          ENDIF
+
+          RETURN formsByCaseAndNumber
+        END
+      -->
+    </p>
+
+    <h2>Wireframes</h2>
+    <p>
+      Create two wireframes for your site. One for each page and list them
+      here
+    </p>
+
+    <h3>Home</h3>
+    <p>
+      The home wireframe includes a hero section, quick-access grammar cards,
+      and a preview of the daily practice widget directly above the footer.
+    </p>
+    <img src="images/home-wireframe.svg" alt="Home page wireframe" />
+
+    <h3>Conjugations and Declensions layout</h3>
+    <p>
+      The grammar wireframe uses a left filter panel and a main content area
+      with responsive tables. On mobile, filters move to a top dropdown and
+      tables become stacked cards for readability.
+    </p>
+    <img src="images/grammar-wireframe.svg" alt="Grammar page wireframe" />
+  </main>
+</body>
+
+</html>
