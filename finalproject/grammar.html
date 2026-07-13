@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppidum Meum | Grammar Charts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/oppidum-meum-logo.svg" alt="Oppidum Meum logo">
+        <span>Oppidum Meum</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="grammar.html">Grammar</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel">
+        <p class="subtitle">Grammar Reference</p>
+        <h1>Conjugations and Declensions</h1>
+        <p>Use the filters to focus on one pattern at a time, then expand examples for context.</p>
+      </section>
+
+      <section class="grammar-layout">
+        <aside class="filters">
+          <h2>Filters</h2>
+
+          <label for="grammar-mode">Section</label>
+          <select id="grammar-mode">
+            <option value="conjugations">Conjugations</option>
+            <option value="declensions">Declensions</option>
+          </select>
+
+          <div id="verb-filters">
+            <label for="conjugation-filter">Conjugation</label>
+            <select id="conjugation-filter">
+              <option value="all">All</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+              <option value="irregular">Irregular</option>
+            </select>
+
+            <label for="tense-filter">Tense</label>
+            <select id="tense-filter">
+              <option value="all">All</option>
+              <option value="present">Present</option>
+              <option value="imperfect">Imperfect</option>
+              <option value="future">Future</option>
+            </select>
+
+            <label for="person-filter">Person</label>
+            <select id="person-filter">
+              <option value="all">All</option>
+              <option value="1s">1st singular</option>
+              <option value="2s">2nd singular</option>
+              <option value="3s">3rd singular</option>
+              <option value="1p">1st plural</option>
+              <option value="2p">2nd plural</option>
+              <option value="3p">3rd plural</option>
+            </select>
+          </div>
+
+          <div id="noun-filters" hidden>
+            <label for="declension-filter">Declension</label>
+            <select id="declension-filter">
+              <option value="all">All</option>
+              <option value="1st">1st</option>
+              <option value="2nd">2nd</option>
+              <option value="3rd">3rd</option>
+              <option value="4th">4th</option>
+              <option value="5th">5th</option>
+            </select>
+
+            <label for="case-filter">Case</label>
+            <select id="case-filter">
+              <option value="all">All</option>
+              <option value="nominative">Nominative</option>
+              <option value="genitive">Genitive</option>
+              <option value="dative">Dative</option>
+              <option value="accusative">Accusative</option>
+              <option value="ablative">Ablative</option>
+              <option value="vocative">Vocative</option>
+            </select>
+
+            <label for="number-filter">Number</label>
+            <select id="number-filter">
+              <option value="all">All</option>
+              <option value="singular">Singular</option>
+              <option value="plural">Plural</option>
+            </select>
+
+            <label>
+              <input id="endings-only" type="checkbox">
+              Endings-only mode
+            </label>
+          </div>
+        </aside>
+
+        <section class="panel" id="chart-panel" aria-live="polite">
+          <details open>
+            <summary>Conjugations</summary>
+            <p class="muted">Present, imperfect, and future active indicative forms with examples.</p>
+            <div id="conjugations-table-wrap"></div>
+          </details>
+
+          <details>
+            <summary>Declensions</summary>
+            <p class="muted">First through fifth declension sample forms and endings.</p>
+            <div id="declensions-table-wrap"></div>
+          </details>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Compare patterns side by side, then switch to quizzes for retrieval practice.</p>
+    </footer>
+  </div>
+
+  <script src="grammar.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppidum Meum | Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/oppidum-meum-logo.svg" alt="Oppidum Meum logo">
+        <span>Oppidum Meum</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="grammar.html">Grammar</a>
+        <a class="active" href="quiz.html">Quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel">
+        <p class="subtitle">Practice Lab</p>
+        <h1>Verb and Declension Quiz</h1>
+        <p>Choose a mode, answer the prompt, and track your running score over multiple sessions.</p>
+      </section>
+
+      <section class="quiz-grid">
+        <section class="quiz-box">
+          <label for="quiz-mode">Quiz type</label>
+          <select id="quiz-mode">
+            <option value="verb">Verb forms</option>
+            <option value="declension">Declensions</option>
+          </select>
+
+          <h2 id="question">Press New Question to begin.</h2>
+
+          <label for="answer-input">Your answer</label>
+          <input id="answer-input" type="text" autocomplete="off" placeholder="Type a Latin form">
+
+          <div class="hero-actions">
+            <button id="submit-answer" class="btn primary" type="button">Submit Answer</button>
+            <button id="new-question" class="btn secondary" type="button">New Question</button>
+          </div>
+
+          <p id="feedback" aria-live="polite"></p>
+          <p class="muted" id="last-correct"></p>
+        </section>
+
+        <aside class="scoreboard" id="scoreboard">
+          <h2>Score Tracker</h2>
+          <p>Correct: <strong id="correct-count">0</strong></p>
+          <p>Incorrect: <strong id="incorrect-count">0</strong></p>
+          <p>Current streak: <strong id="streak-count">0</strong></p>
+          <button id="reset-score" class="btn ghost" type="button">Reset Score</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Remember to come back soon! The more frequently you practice, the stronger your recall will become. Do it OR ELSE!!!!!</p>
+    </footer>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

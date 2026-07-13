@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oppidum Meum | Latin Study Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/oppidum-meum-logo.svg" alt="Oppidum Meum logo">
+        <span>Oppidum Meum</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="grammar.html">Grammar</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="subtitle">Its time to learn latin, dummy</p>
+          <h1>Your fast reference for conjugations, declensions, and practice</h1>
+          <p>Oppidum Meum keeps endings, charts, and drills in one place so you can confidently move from memorizing forms to reading</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="grammar.html">Open Grammar Charts</a>
+            <a class="btn ghost" href="quiz.html">Start a Quiz</a>
+          </div>
+        </div>
+        <aside class="daily-form" aria-live="polite">
+          <h2>Form of the day</h2>
+          <p id="daily-form"></p>
+          <p id="daily-note" class="muted"></p>
+          <button id="new-form" class="btn secondary" type="button">Show Another Form</button>
+        </aside>
+      </section>
+
+      <section class="cards" aria-label="Quick access">
+        <article class="feature-card">
+          <h2>Grammar Charts</h2>
+          <p>The best collection of latin information made ever, or well at least in the past month or so. Use this to reinforce the latin you have already learned. Or maybe to start form scratch.</p>
+          <a href="grammar.html">Go to grammar page</a>
+        </article>
+        <article class="feature-card">
+          <h2>Adaptive Quizzes</h2>
+          <p>We will provide random prompts for you to then test your knowledge. This is scientifically the best way to reinforce your learning and improve retention.</p>
+          <a href="quiz.html">Go to quiz page</a>
+        </article>
+        <article class="feature-card">
+          <h2>How to Use This Site</h2>
+          <p>First stop by the chart to learn the various endings, and then use our quiz to help you internalize all of the forms and patterns.</p>
+          <a href="quiz.html#scoreboard">Track your progress</a>
+        </article>
+      </section>
+
+      <section class="study-tip">
+        <h2>Study Tip</h2>
+        <p>When learning latin, it is necessary that you learn all of the conjugation and declension endings together. After which, you can compare across all of the different types of conjugations and declensions to see patterns and similarities. DO IT THIS WAY I BEG OF YOU!!!!! IT WILL BE OF THE GREATEST SUPPORT TO YOUR SUBSEQUENT STUDIES.</p>
+        <img class="study-tip-image" src="https://qtxasset.com/quartz/qcloud1/media/image/travelagentcentral/1544476629/ColosseumRomevwalakteiStockGettyImagesPlusGettyImages.jpg/ColosseumRomevwalakteiStockGettyImagesPlusGettyImages.jpg?VersionId=8Wt_BNtEzqQ45ee8zdeFkLXdBecNFNnP" alt="Roman Colosseum" />
+        <p>Upon learning latin, you can study the history, political philosophy, and culture of ancient Rome by reviewing its primary sources. As the creator of this website, this is what I recommend you do as well.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Oppidum Meum: the learning hub for people who know literally nothing about Latin and are quite dumb. Do better!</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
